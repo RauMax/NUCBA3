@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+
+nav{
+    height: 10vh;
+    background-color: #030027;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto{
+    width: 30%;
+    margin: 1rem;
+}
+
+.flex div{
+    width: 30%;
+}
+
+.btn{
+    border-radius: 25px;
+    background-color: #04A777;
+    width: 100px;
+    border: none;
+    padding: .5rem 5rem;
+    margin-top: 2rem;
+}
+
+.width{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main_text{
+    margin-top: 3rem;
+    width: 50%;
+}
