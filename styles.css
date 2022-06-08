@@ -1,55 +1,117 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
-html{
-    height: 100%;
+img {
+  width: 100%;
+  height: auto;
 }
-img{
-    width: 100%;
-    height: auto;
-}
-body{
-    height: 100%;
-    margin: 0;
+.div-img {
+  max-width: 500px;
 }
 
-nav{
-    height: 10vh;
-    background-color: #030027;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.flex{
+.icon {
+  margin: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #04a777;
+}
+
+.hidden div {
+  margin: 1.5rem 0;
+}
+
+nav {
+  background-color: #030027;
+  height: 100px;
+}
+
+.centered {
+  width: min(550px, 90%);
+  margin: 2rem auto;
+}
+
+nav i {
+  color: #fffcff;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+
+.show {
+  display: block;
+  overflow: auto;
+  position: absolute;
+  background-color: #030027;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: #04a777;
+  width: 100px;
+  border: none;
+  padding: 0.5rem 5rem;
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.box-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  margin: 3rem 0;
+  padding: 3rem;
+}
+
+footer {
+  background-color: #030027;
+  padding: 2rem;
+  color: #fffcff;
+}
+
+a:hover{
+    color: #fffcff;
+}
+
+@media (min-width: 1200px) {
+  .display-flex {
     display: flex;
-    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .centered {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .btn-hiden {
+    display: none;
+    overflow: hidden;
+  }
+  .show-nav {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-}
-
-.foto{
-    width: 30%;
-    margin: 1rem;
-}
-
-.flex div{
-    width: 30%;
-}
-
-.btn{
-    border-radius: 25px;
-    background-color: #04A777;
-    width: 100px;
-    border: none;
-    padding: .5rem 5rem;
-    margin-top: 2rem;
-}
-
-.width{
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.main_text{
-    margin-top: 3rem;
-    width: 50%;
+    height: 100%;
+  }
 }
