@@ -7,6 +7,11 @@ img {
   width: 100%;
   height: auto;
 }
+
+iframe{
+  width: 100%;
+}
+
 .div-img {
   max-width: 500px;
 }
@@ -85,6 +90,21 @@ nav i {
   padding: 3rem;
 }
 
+.map-container{
+display: flex;
+justify-content: center;
+}
+
+.map{
+  width: 375px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+
+.section-margin{
+  margin: 4rem auto;
+}
 footer {
   background-color: #030027;
   padding: 2rem;
@@ -95,10 +115,33 @@ a:hover{
     color: #fffcff;
 }
 
+.clients-card:hover{
+  background-color: #F02D3A;
+}
+
+.small-icon{
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.icon-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-margin{
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+
+
+
 @media (min-width: 1200px) {
   .display-flex {
     display: flex;
     gap: 1.5rem;
+    justify-content: space-evenly;
   }
   .centered {
     width: 90%;
@@ -114,4 +157,11 @@ a:hover{
     align-items: center;
     height: 100%;
   }
+
+  .map{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
 }
