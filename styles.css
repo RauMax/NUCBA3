@@ -188,7 +188,7 @@ a:hover {
   }
 
   .box-shadow:hover{
-    background-color: rgba(100, 100, 111, 0.2);
-    color: #030027;
+    background-color: #030027;
+    color: #fffcff;
   }
 }
