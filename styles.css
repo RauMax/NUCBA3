@@ -8,7 +8,7 @@ img {
   height: auto;
 }
 
-iframe{
+iframe {
   width: 100%;
 }
 
@@ -90,19 +90,18 @@ nav i {
   padding: 3rem;
 }
 
-.map-container{
-display: flex;
-justify-content: center;
+.map-container {
+  display: flex;
+  justify-content: center;
 }
 
-.map{
+.map {
   width: 375px;
   height: 400px;
   margin: 0 auto;
 }
 
-
-.section-margin{
+.section-margin {
   margin: 4rem auto;
 }
 footer {
@@ -111,31 +110,29 @@ footer {
   color: #fffcff;
 }
 
-a:hover{
-    color: #fffcff;
+a:hover {
+  color: #fffcff;
 }
 
-.clients-card:hover{
-  background-color: #F02D3A;
+.clients-card:hover {
+  background-color: #f02d3a;
 }
 
-.small-icon{
+.small-icon {
   font-size: 2rem;
   margin-right: 2rem;
 }
 
-.icon-flex{
+.icon-flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.inner-margin{
+.inner-margin {
   margin: 2rem;
   font-size: 2.5rem;
 }
-
-
 
 @media (min-width: 1200px) {
   .display-flex {
@@ -158,10 +155,40 @@ a:hover{
     height: 100%;
   }
 
-  .map{
+  .map {
     display: flex;
     justify-content: center;
   }
-  
-  
+
+  .item {
+    position: relative;
+  }
+
+  .item-link::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #f19a3e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s linear;
+  }
+
+  .item-link:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+
+  .rotate:hover{
+    /* transform: rotate(5deg); */
+    transform: scale(1.1);
+  }
+
+  .box-shadow:hover{
+    background-color: rgba(100, 100, 111, 0.2);
+    color: #030027;
+  }
 }
